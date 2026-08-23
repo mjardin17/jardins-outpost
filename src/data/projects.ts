@@ -17,6 +17,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "empire-os",
+    name: "Empire OS",
+    description:
+      "Unified video engine for Gods & Glory, Little Olympus, and Iron Legends. One renderer: Ken Burns, Higgsfield clips, Kokoro narration, music mix, and council QC.",
+    status: "Live",
+    kind: "internal",
+    url: "/projects/empire-os",
+  },
+  {
     slug: "storyforge",
     name: "StoryForge",
     description:
@@ -33,7 +42,8 @@ export const projects: Project[] = [
     status: "Live",
     kind: "iframe",
     url: "http://localhost:3003",
-  },  {
+  },
+  {
     slug: "boss-listers",
     name: "Boss Listers",
     description:
@@ -42,7 +52,6 @@ export const projects: Project[] = [
     kind: "iframe",
     url: "https://boss-listers.pages.dev",
   },
-
 ];
 
 export function getProject(slug: string): Project | undefined {
