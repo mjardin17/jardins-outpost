@@ -6,7 +6,7 @@ const links = [
   { href: "/#store", label: "Store" },
   { href: "/#inventory", label: "Inventory" },
   { href: "/listings", label: "My Listings" },
-  { href: "/automations", label: "Automations" },
+  { href: "/automations", label: "Automation Services" },
   { href: "/#services", label: "Services" },
   { href: "/workspace", label: "Workspace" },
   { href: "/#contact", label: "Contact" },

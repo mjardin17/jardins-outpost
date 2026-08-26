@@ -19,6 +19,7 @@ import {
   Wrench,
 } from "lucide-react";
 import NavBar from "@/components/NavBar";
+import AutomationServicesGrid from "@/components/automations/AutomationServicesGrid";
 
 export const metadata: Metadata = {
   title: "Business Automations | Jardin's Outpost",
@@ -110,9 +111,20 @@ export default function AutomationsPage() {
                 <a href="mailto:hello@jardinsoutpost.com?subject=Business%20automation%20project" className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5 hover:bg-accent-soft">
                   Tell me what is slowing you down <ArrowRight aria-hidden size={16} />
                 </a>
-                <Link href="#projects" className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm text-muted transition-colors hover:border-accent/40 hover:text-foreground">See real systems</Link>
+                <Link href="#services" className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm text-muted transition-colors hover:border-accent/40 hover:text-foreground">Explore services</Link>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="services" className="border-b border-border px-6 py-20 sm:py-24">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 max-w-2xl">
+              <p className="mb-3 text-xs uppercase tracking-[0.2em] text-muted">Automation Services</p>
+              <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Choose the workflow that is costing you time.</h2>
+              <p className="mt-4 text-sm leading-relaxed text-muted">Each service is custom-built around your process. Connections are configured only after the real tools, access, and supported APIs are confirmed.</p>
+            </div>
+            <AutomationServicesGrid />
           </div>
         </section>
 
@@ -134,6 +146,17 @@ export default function AutomationsPage() {
                 <div className="flex flex-col justify-between"><div><p className="text-sm leading-relaxed text-muted">{project.description}</p><div className="mt-5 rounded-xl border border-border bg-background-raised p-4"><p className="text-xs uppercase tracking-[0.16em] text-muted">Current capability / state</p><p className="mt-2 text-sm leading-relaxed">{project.state}</p></div></div><Link href={project.href} className="mt-6 inline-flex items-center gap-2 self-start text-sm text-accent-soft hover:text-foreground">{project.linkLabel} {project.external ? <ExternalLink aria-hidden size={14} /> : <ArrowRight aria-hidden size={14} />}</Link></div>
               </article>)}
             </div>
+          </div>
+        </section>
+
+        <section id="services" className="border-b border-border px-6 py-20 sm:py-24">
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12 max-w-2xl">
+              <p className="mb-3 text-xs uppercase tracking-[0.2em] text-muted">Automation Services</p>
+              <h2 className="font-display text-4xl tracking-tight sm:text-5xl">Choose the workflow that is costing you time.</h2>
+              <p className="mt-4 text-sm leading-relaxed text-muted">Each service is custom-built around your process. Connections are configured only after the real tools, access, and supported APIs are confirmed.</p>
+            </div>
+            <AutomationServicesGrid />
           </div>
         </section>
 
