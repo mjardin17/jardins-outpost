@@ -14,7 +14,7 @@ const SUPABASE_URL =
   "https://irslzufsqjveyibkfjtz.supabase.co";
 const SUPABASE_ANON_KEY =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ??
-  "sb_publishable_HV03fWT-xFr4mB1x3AGlcg_a3JbBtwA";
+  "sb_publishable_WVydT_2E_k0lrN_QPgyFWA_Zy_hQ2M_";
 
 const POLL_INTERVAL_MS = 5 * 60 * 1000; // matches the 5-min edge cache upstream
 
